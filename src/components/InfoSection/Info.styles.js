@@ -1,29 +1,28 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#222")};
+display: grid;
+z-index: 1;
+height: 860px;
+width: 100%;
+// max-width: 1100px;
+margin-left: auto;
+margin-right:auto;
+padding: 0 24px;
+justify-content: center;
+color: #fff;
+background: #222;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
 `;
 
-export const InfoWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 860px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
-  justify-content: center;
-`;
+
 
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
   align-items: center;
   justify-content: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -51,23 +50,90 @@ export const TextWrapper = styled.div`
 
 export const Topline = styled.p`
   color: #00bfa6;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 2rem;
+  padding: 2rem 4rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  transform-origin: bottom left;
+  text-shadow: 1px 1px 1px #333,
+  1px 2px 1px #333,
+  1px 3px 1px #333,
+  1px 4px 1px #333,
+  1px 5px 1px #333,
+  1px 6px 1px #333,
+  1px 7px 1px #333,
+  1px 8px 1px #333,
+  1px 9px 1px #333,
+  1px 10px 1px #333,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#fff" : "#010606")};
+  font-size: 2.5rem;
+  color: #fff;          
+  padding-left: 3rem;
+  text-align: left;
+  padding-top: 6rem; 
+  line-height: 1.5;
+  text-shadow: 1px 1px 1px #333,
+  1px 2px 1px #333,
+  1px 3px 1px #333,
+  1px 4px 1px #333,
+  1px 5px 1px #333,
+  1px 6px 1px #333,
+  1px 7px 1px #333,
+  1px 8px 1px #333,
+  1px 9px 1px #333,
+  1px 10px 1px #333,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+  white-space:pre-line;
+  letter-spacing: 5px;
+ 
+  animation: animate 1s linear forwards;
+  opacity: 0;
+
+  &:nth-child(6){
+    color:rgba(219, 39, 119);
+  }
   @media screen and (max-width: 768px) {
     font-size: 32px;
   }
+  @keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0);
+        filter: blur(0);
+    }
+    
+}
+@keyframes bounce {
+    0% { 
+        transform: translateX(0%); } 
+    15% { 
+        transform: translateX(-25%) rotate(-5deg); } 
+    30% { 
+        transform: translateX(20%) rotate(3deg); } 
+    45% { 
+        transform: translateX(-15%) rotate(-3deg); } 
+    60% { 
+        transform: translateX(10%) rotate(2deg); }
+    75% { 
+        transform: translateX(-5%) rotate(-1deg); }
+    100% { 
+        transform: translateX(0%); } 
+}
 `;
 
 export const Subtitle = styled.p`

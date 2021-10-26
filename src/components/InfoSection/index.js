@@ -1,6 +1,5 @@
 import {
     InfoContainer,
-    InfoWrapper,
     InfoRow,
     Column1,
     Column2,
@@ -14,29 +13,20 @@ import {
   } from './Info.styles'
 
 const InfoSection = ({
-  id,
-  lightBg,
-  lightText,
-  darkText,
-  description,
-  buttonLabel,
   headline,
   topLine,
   img,
   imgStart,
   alt,
-  primary,
-  dark,
+
 }) => {
     return (
-        <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper>
+        <InfoContainer>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
+                <Heading>{headline}</Heading>
                 <Topline>{topLine}</Topline>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   {/* <Button
                     to="home"
@@ -59,7 +49,6 @@ const InfoSection = ({
               </ImgWrap>
             </Column2>
           </InfoRow>
-        </InfoWrapper>
       </InfoContainer>
     )
 }
