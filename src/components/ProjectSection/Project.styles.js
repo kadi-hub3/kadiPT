@@ -5,13 +5,16 @@ export const ProjectsContainer=styled.div`
     height: 960px;
     width: 100%;
     display:flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 0 24px;
 `
 
 export const ProjectsWrapper=styled.div`
     position:relative;
-    max-width:80%;
+    max-width:90%;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     grid-template-rows:minmax(100px,auto);
@@ -20,7 +23,11 @@ export const ProjectsWrapper=styled.div`
     margin-left: auto;
     margin-right:auto;
     
+    @media (min-width:990px){
+        max-width:80%;
+        height:90%;
 
+    }
     @media (max-width:991px){
         grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
         grid-template-rows:minmax(auto,auto);
@@ -66,8 +73,8 @@ export const ProjBox=styled.div`
 `
 
 export const ProjContent=styled.div`
-height:100%;
-width:60%;
+    height:100%;
+    width:60%;
 `
 
 export const Img=styled.img`
