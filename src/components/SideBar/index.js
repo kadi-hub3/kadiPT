@@ -1,5 +1,6 @@
 import { BsGearFill,BsFillLightningFill,BsPlus  } from 'react-icons/bs';
 import {IoPerson } from 'react-icons/io5';
+import { animateScroll as scroll } from "react-scroll";
 import {Container,IconsContainer,Logo, NavContainer} from './index.styles'
 import UseAnimations from 'react-useanimations';
 import github from 'react-useanimations/lib/github'
@@ -8,14 +9,25 @@ import twitter from 'react-useanimations/lib/twitter'
 import logo from '../../images/logo.png'
 
 const SideBar = () => {
+  const scrollHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <Container>
-      <Logo src={logo} alt='logo'/>
+      <Logo to="/" onClick={scrollHome}>K.M</Logo>
       <NavContainer>
-        <SideBarIcon icon={<BsFillLightningFill  size="22" />} text='✨ Home '/>
-        <SideBarIcon icon={<IoPerson size="22" />} text='👱‍♀️ A Short Intro About Me '/>
-        <SideBarIcon icon={<BsGearFill size="22"/>} text='📦 🚀 My Side Projects' />
-        <SideBarIcon icon={<BsPlus size="22"/>}  text='Contact Me for Any Inquiries 📨'/>
+        <SideBarIcon icon={<BsFillLightningFill  size="22" />} text='✨ Home ' to="about"
+                smooth={true}
+                duration={500}/>
+        <SideBarIcon icon={<IoPerson size="22" />} text='👱‍♀️ A Short Intro About Me ' to="about"
+                smooth={true}
+                duration={500}/>
+        <SideBarIcon icon={<BsGearFill size="22"/>} text='📦 🚀 My Side Projects' to="projects"
+                smooth={true}
+                duration={500}/>
+        <SideBarIcon icon={<BsPlus size="22"/>}  text='Contact Me for Any Inquiries 📨' to="contact"
+                smooth={true}
+                duration={500}/>
         </NavContainer>
         <IconsContainer>
         <UseAnimations animation={github} size={30} wrapperStyle={{ stroke: '#fff' }} />

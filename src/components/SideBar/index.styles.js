@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 
 export const Container= styled.nav`
     position: fixed;
@@ -15,20 +17,25 @@ export const Container= styled.nav`
 `
 
 export const IconsContainer=styled.div`
-display: flex;
-flex-direction: column;
-align-items:center;
-padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 1rem 0;
 
 
     path{
-        stroke: rgba(253, 230, 138);
+        stroke: rgba(251, 207, 232);
     }
 `
 
 export const NavContainer= styled.nav``
 
-export const Logo= styled.img`
+export const Logo= styled(LinkR)`
     width: 100%;
     height:60px;
+    color: #fff;
+    font-size:25px;
+    font-weight:bold;
+    cursor:pointer;
+    text-decoration:none;
 `
