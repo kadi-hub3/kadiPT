@@ -5,57 +5,70 @@ display: grid;
 z-index: 1;
 height: 860px;
 width: 100%;
-// max-width: 1100px;
 margin-left: auto;
 margin-right:auto;
-padding: 0 24px;
-justify-content: center;
+grid-gap: 30px;
 color: #fff;
-background: #222;
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
+background: #333;
 `;
 
-
-
-export const InfoRow = styled.div`
+export const InfoRow= styled.div`
+  position:relative;
   display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
-  grid-gap: 30px;
+  display:flex;
   align-items: center;
   justify-content: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+  width: 90%;
+  grid-template-columns: repeat(2,1fr);
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+
   }
-`;
+`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col1;
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col2;
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-bottom: 60px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+`;
+export const TextTitle = styled.h1`
+text{
+    font-size: 10rem; 
+    stroke: #f98923;
+    font-weight: 700;
+    stroke-width: 12;
+    background:red;
+    animation: strokeText 5s linear;
+
+    @keyframes strokeText{
+        0%{
+            stroke-dasharray: 0 70%;
+            stroke-dashoffset: 10%; 
+        }
+        100%{
+            stroke-dasharray: 70% 0;
+            stroke-dashoffset: -10%;
+        }
+    }
+}
+
+`;
+export const TextContent = styled.p`
+  font-size: 20px;
+  letter-spacing: 1px;
+
 `;
 
-
-export const Subtitle = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
-`;
 
 export const BtnWrap = styled.div`
   display: flex;

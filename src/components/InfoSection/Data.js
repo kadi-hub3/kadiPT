@@ -17,7 +17,7 @@ export const homeData = {
   primary: true,
   darkText: false,
 };
-export const homeObjec11t = {
+export const aboutData = {
   id: "about",
   lightBg: false,
   lightText: true,
@@ -26,7 +26,7 @@ export const homeObjec11t = {
   description:
     "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
   buttonLabel: "Get Started",
-  imgStart: false,
+  imgStart: true,
   img: svg1,
   alt: "transactions",
   dark: true,

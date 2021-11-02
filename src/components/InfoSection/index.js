@@ -11,10 +11,8 @@ import {
     ImgWrap,
     Img,
   } from './Info.styles'
-
+import Title from '../StyledTitle'
 const InfoSection = ({
-  headline,
-  topLine,
   img,
   imgStart,
   alt,
@@ -25,8 +23,7 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <Heading>{headline}</Heading>
-                <Topline>{topLine}</Topline>
+                <Title/>
                 <BtnWrap>
                   {/* <Button
                     to="home"
