@@ -9,7 +9,7 @@ export const Container= styled.nav`
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    background:#222;
+    background:#16181d;
 	width: 4rem;
     filter: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03)) drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
     box-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);

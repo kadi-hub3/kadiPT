@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Button = styled.button`
-  background: transparent;
+  background: #161821;
   white-space: nowrap;
   outline: none;
   border: ${({ primary }) => (primary ? "rgba(245, 158, 11)" : "rgba(219, 39, 119)")} 3px solid;

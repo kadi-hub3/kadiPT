@@ -14,10 +14,10 @@
   height: 3rem;
   width: 3rem;
   margin: 0.5rem auto;
-  background: #222;
+  background: #16181d;
   color: rgba(16, 185, 129, 1);
   border-radius: 1.5rem;
-  box-shadow: 5px 5px 5px #222;
+  box-shadow: 5px 5px 5px #16181d;
 }
 
 .sidebar-icon:hover {

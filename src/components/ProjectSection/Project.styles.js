@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectsContainer=styled.div`
-    background:#333;
+    background:#1e2127;
     width: 100%;
     display:flex;
     justify-content: center;
@@ -32,7 +32,7 @@ export const ProjectsWrapper=styled.div`
 `
 
 export const ProjBox=styled.div`
-    background:#222;
+    background:#16181d;
     padding:20px;
     display:grid;
     font-size:20px;
