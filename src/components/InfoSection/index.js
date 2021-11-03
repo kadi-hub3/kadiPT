@@ -12,10 +12,12 @@ import {
     Img,
   } from './Info.styles'
 import Title from '../StyledTitle'
+import{ Button }from '../Button'
 const InfoSection = ({
   img,
   imgStart,
   alt,
+  buttonLabel
 
 }) => {
     return (
@@ -25,18 +27,18 @@ const InfoSection = ({
               <TextWrapper>
                 <Title/>
                 <BtnWrap>
-                  {/* <Button
+                  <Button
                     to="home"
                     smooth={true}
                     duration={500}
                     spy={true}
                     exact="true"
                     offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
+                    primary='true'
+                    big='true'
                   >
                     {buttonLabel}
-                  </Button> */}
+                  </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

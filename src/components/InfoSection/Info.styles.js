@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
 display: grid;
 z-index: 1;
-height: 860px;
+height: 100vh;
 width: 100%;
-// max-width: 1100px;
 margin-left: auto;
 margin-right:auto;
 padding: 0 24px;

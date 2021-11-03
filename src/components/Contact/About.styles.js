@@ -10,7 +10,7 @@ margin-right:auto;
 padding: 0 24px;
 justify-content: center;
 color: #fff;
-background: #333;
+background: #222;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }

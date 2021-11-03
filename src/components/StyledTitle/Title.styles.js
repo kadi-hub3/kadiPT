@@ -279,7 +279,7 @@ export const MainTitle=styled.h2`
 export const BottomLine = styled.p`
   color: #00bfa6;
   margin-bottom: 2rem;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   font-size: 1.2rem;
   font-weight: 200;
   transform-origin: bottom left;

@@ -2,35 +2,32 @@ import styled from 'styled-components'
 
 export const ProjectsContainer=styled.div`
     background:#333;
-    height: 960px;
     width: 100%;
     display:flex;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right:auto;
-    padding: 0 24px;
+    padding: 40px 24px;
 `
 
 export const ProjectsWrapper=styled.div`
-    position:relative;
     max-width:90%;
+    height:90%;
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-template-rows:minmax(100px,auto);
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-rows:minmax(200px,auto);
     grid-auto-flow:dense;
     grid-gap:20px;
-    margin-left: auto;
-    margin-right:auto;
-    
-    @media (min-width:990px){
-        max-width:80%;
-        height:90%;
 
-    }
+ 
     @media (max-width:991px){
-        grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px,.8fr));
         grid-template-rows:minmax(auto,auto);
+    }
+    @media screen and (min-width:1400px){
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr)) !important;
+        grid-template-rows:minmax(200px,auto);
     }
 `
 

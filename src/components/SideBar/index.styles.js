@@ -38,4 +38,8 @@ export const Logo= styled(LinkR)`
     font-weight:bold;
     cursor:pointer;
     text-decoration:none;
+    img{
+        width:100%;
+        
+    }
 `

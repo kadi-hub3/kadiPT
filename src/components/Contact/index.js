@@ -9,9 +9,9 @@ import { InfoContainer,
     TextContent,
     ImgWrap,
     Img,} from './About.styles'
-import Title from '../StyledTitle'
+import Form from '../Form'
 
-const About = ({imgStart}) => {
+const ContactSection = ({imgStart, img, alt}) => {
     return (
         <InfoContainer>
         <InfoRow  imgStart={imgStart}>
@@ -20,21 +20,19 @@ const About = ({imgStart}) => {
                 <TextTitle>
                 <svg viewBox="10 30 2000 700">
                   <text x="0%" y="60%" fill="transparent" text-anchor="start">
-                    About Me
+                    Contact Me
                   </text>
                 </svg>
                 </TextTitle>
                 <TextContent>
-            Self-taught front-end developer, fascinated by IT and curious about the full-spectrum of cybersecurity.<br/><br/>
-            HTML, CSS, Sass, JS, building small and medium web apps with React, plugins, features, animations and coding interactive layouts.<br/><br/>
-            Passionate eye for innovative, simplistic UI design and interested in the entire front-end spectrum.<br/><br/>
-            Visit my <span>LinkedIn </span>for more details or just contact me.
-                </TextContent>
+                I'm interested in web developement, especially front-end development. If you have any request or question, dont't hesitate to contact me using form below.
+            </TextContent>
             </TextWrapper>
+            <Form/>
           </Column1>
           <Column2>
             <ImgWrap>
-            <Cloud3D/>
+            <Img src={img} alt={alt}/>
             </ImgWrap>
           </Column2>
           </InfoRow>
@@ -42,4 +40,4 @@ const About = ({imgStart}) => {
     )
 }
 
-export default About
+export default ContactSection

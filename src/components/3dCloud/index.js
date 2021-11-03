@@ -48,7 +48,7 @@ const Cloud3D = () => {
       })
     return (
         <div id="scroll-zoom">
-        <SVG3DTagCloud/>
+        
       </div>
     )
 }

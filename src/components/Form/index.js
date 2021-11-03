@@ -50,11 +50,7 @@ const FormComponent = () => {
         }}
       >
         {(props) => (
-          <Section>
             <Form>
-              <h1>
-                Contact me for further inquiries
-              </h1>
               <TextSection>
                 <TextInput
                   label="Name"
@@ -86,7 +82,6 @@ const FormComponent = () => {
                 </Button>
               </TextSection>
             </Form>
-          </Section>
         )}
       </Formik>
     );

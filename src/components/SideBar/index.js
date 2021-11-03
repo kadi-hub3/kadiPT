@@ -14,9 +14,9 @@ const SideBar = () => {
   };
   return (
     <Container>
-      <Logo to="/" onClick={scrollHome}>K.M</Logo>
+      <Logo to="/" onClick={scrollHome}><img src={logo}/></Logo>
       <NavContainer>
-        <SideBarIcon icon={<BsFillLightningFill  size="22" />} text='✨ Home ' to="about"
+        <SideBarIcon icon={<BsFillLightningFill  size="22" />} text='✨ Home ' to="home"
                 smooth={true}
                 duration={500}/>
         <SideBarIcon icon={<IoPerson size="22" />} text='👱‍♀️ A Short Intro About Me ' to="about"
