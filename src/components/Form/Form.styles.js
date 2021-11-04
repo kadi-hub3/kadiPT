@@ -23,7 +23,6 @@ export const TextSection = styled.div`
     color: #fff;
     font-size:16px;
     border-bottom:  rgba(251, 207, 232) 4px solid;
-    border-left:  rgba(251, 207, 232) 1px solid;
     @media screen and (max-width: 768px) {
       margin: 0;
       padding: 0.5rem;
@@ -36,5 +35,8 @@ export const TextSection = styled.div`
     display: flex;
     margin: 10px 0;
     color: #fff;
+  }
+  .message{
+    height:100px;
   }
 `;

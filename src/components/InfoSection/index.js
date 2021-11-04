@@ -17,11 +17,12 @@ const InfoSection = ({
   img,
   imgStart,
   alt,
-  buttonLabel
+  buttonLabel,
+  id
 
 }) => {
     return (
-        <InfoContainer>
+        <InfoContainer id={id}>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>

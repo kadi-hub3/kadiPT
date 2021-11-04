@@ -11,9 +11,9 @@ import { InfoContainer,
     Img,} from './About.styles'
 import Title from '../StyledTitle'
 
-const About = ({imgStart}) => {
+const About = ({imgStart, id}) => {
     return (
-        <InfoContainer>
+        <InfoContainer id={id}>
         <InfoRow  imgStart={imgStart}>
           <Column1>
             <TextWrapper>

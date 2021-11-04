@@ -1,5 +1,4 @@
 import React from 'react'
-import Cloud3D from '../3dCloud'
 import { InfoContainer,
     InfoRow,
     Column1,
@@ -8,25 +7,25 @@ import { InfoContainer,
     TextTitle,
     TextContent,
     ImgWrap,
-    Img,} from './About.styles'
+    Img,} from './Contact.styles'
 import Form from '../Form'
 
-const ContactSection = ({imgStart, img, alt}) => {
+const ContactSection = ({imgStart, img, alt,id, description, topLine}) => {
     return (
-        <InfoContainer>
-        <InfoRow  imgStart={imgStart}>
+        <InfoContainer id={id}>
+        <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
                 <TextTitle>
                 <svg viewBox="10 30 2000 700">
                   <text x="0%" y="60%" fill="transparent" text-anchor="start">
-                    Contact Me
+                    {topLine}
                   </text>
                 </svg>
                 </TextTitle>
                 <TextContent>
-                I'm interested in web developement, especially front-end development. If you have any request or question, dont't hesitate to contact me using form below.
-            </TextContent>
+                  {description}           
+                 </TextContent>
             </TextWrapper>
             <Form/>
           </Column1>

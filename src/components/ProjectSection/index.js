@@ -1,8 +1,8 @@
 import React from 'react'
 import {ProjectsContainer,ProjectsWrapper, ProjBox,Img,ProjContent,ProjP} from './Project.styles'
-const ProjectSection = ({img1,content1,img2,content2,img3,content3,img4,content4,img5,content5,img6,content6}) => {
+const ProjectSection = ({id,img1,content1,img2,content2,img3,content3,img4,content4,img5,content5,img6,content6}) => {
     return (
-        <ProjectsContainer>
+        <ProjectsContainer id={id}>
             <ProjectsWrapper>
             <ProjBox>
                 <ProjContent>

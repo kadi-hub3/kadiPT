@@ -53,27 +53,22 @@ const FormComponent = () => {
             <Form>
               <TextSection>
                 <TextInput
-                  label="Name"
+                  label="name"
                   name="name"
                   type="text"
                   placeholder="Enter your first name"
                 />
                 <TextInput
-                  label="Email"
+                  label="email"
                   name="email"
                   type="email"
                   placeholder="Enter your email "
                 />
                 <TextInput
-                  label="Phone"
-                  name="number"
-                  type="text"
-                  placeholder="Enter your phone number (optional) "
-                />
-                <TextInput
-                  label="Message"
+                  label="message"
                   name="message"
                   type="text"
+                  className="message"
                   placeholder="Leave your message  "
                 />
             

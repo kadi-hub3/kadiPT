@@ -33,17 +33,16 @@ export const ProjectsWrapper=styled.div`
 
 export const ProjBox=styled.div`
     background:#16181d;
-    padding:20px;
     display:grid;
-    font-size:20px;
     place-items:center;
-    text-align:center;
-    color:#fff;
-    transition: .5s;
-    
+    position: relative;
+
 
     &:hover{
-        background: #e91e63;
+        position: relative;
+
+        background:rgba(0,0,0,0.7);
+        z-index:999;
     }
 
     &:nth-child(1){
@@ -69,15 +68,17 @@ export const ProjBox=styled.div`
 
 `
 
-export const ProjContent=styled.div`
+export const ProjContent=styled.a`
     height:100%;
     width:60%;
 `
 
 export const Img=styled.img`
+    position:relative;
     width:100%;
     height:100%;
     object-fit: contain;
+    
 
 `
 
