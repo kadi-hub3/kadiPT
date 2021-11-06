@@ -26,14 +26,14 @@ const Cloud3D = () => {
           
             var settings = {
               entries: entries,
-              radius: "90%",
+              radius: "70%",
               radiusMin: 75,
               bgDraw: true,
               bgColor: "transparent",
               opacityOver: 1.0,
               opacityOut: 0.05,
               OpacitySpeed: 2,
-              fov: 800,
+              fov: 600,
               speed: 1,
               fontFamily: "Courier, Arial, sas-serif",
               fontColor: "#369f93",

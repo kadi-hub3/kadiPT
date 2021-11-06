@@ -10,7 +10,7 @@ import {
     BtnWrap,
     ImgWrap,
     Img,
-  } from './Info.styles'
+  } from './Hero.styles'
 import Title from '../StyledTitle'
 import{ Button }from '../Button'
 const InfoSection = ({
@@ -36,7 +36,6 @@ const InfoSection = ({
                     exact="true"
                     offset={-80}
                     primary='true'
-                    big='true'
                   >
                     {buttonLabel}
                   </Button>

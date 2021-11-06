@@ -1,6 +1,6 @@
 import React from 'react'
 import {BottomLine, MainTitle} from './Title.styles'
-import {homeData} from '../InfoSection/Data'
+import {homeData} from '../Data'
 
 const Title = () => {
 

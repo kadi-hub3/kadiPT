@@ -72,8 +72,8 @@ const FormComponent = () => {
                   placeholder="Leave your message  "
                 />
             
-                <Button dark='true' big="true" type="submit">
-                  {props.isSubmitting ? "Loading.." : "Submit"}
+                <Button dark='true' type="submit">
+                  {props.isSubmitting ? "Loading.." : "Send your Message"}
                 </Button>
               </TextSection>
             </Form>

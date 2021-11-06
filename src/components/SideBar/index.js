@@ -21,21 +21,21 @@ const SideBar = () => {
                 duration={500}
                 spy={true}
                 exact="true" >
-          <SideBarIcon icon={<BsFillLightningFill  size="22" />} text='✨ Home '/>
+          <SideBarIcon icon={<BsFillLightningFill  size="20" />} text='✨ Home '/>
         </NavLink>
         <NavLink to="about"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true">
-          <SideBarIcon icon={<IoPerson size="22" />} text='👱‍♀️ A Short Intro About Me '/>
+          <SideBarIcon icon={<IoPerson size="20" />} text='👱‍♀️ A Short Intro About Me '/>
         </NavLink>
         <NavLink to="projects"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true">
-         <SideBarIcon icon={<BsGearFill size="22"/>} text='📦 🚀 My Side Projects' to="projects"
+         <SideBarIcon icon={<BsGearFill size="20"/>} text='📦 🚀 My Side Projects' to="projects"
                 smooth={true}
                 duration={500}/>
         </NavLink>
@@ -44,20 +44,20 @@ const SideBar = () => {
                 duration={500}
                 spy={true}
                 exact="true">
-          <SideBarIcon icon={<BsPlus size="22"/>}  text='Contact Me for Any Inquiries 📨' to="contact"
+          <SideBarIcon icon={<BsPlus size="20"/>}  text='Contact Me for Any Inquiries 📨' to="contact"
                 smooth={true}
                 duration={500}/>
         </NavLink>
         </NavContainer>
         <IconsContainer>
          <IconLink href='https://www.github.com/kadi-hub3' target='_blank'>
-        <UseAnimations animation={github} size={30} wrapperStyle={{ stroke: '#fff' }} />
+        <UseAnimations animation={github} size={20}  />
         </IconLink>
         <IconLink href='https://www.linkedin.com/in/kadi-moudarrif/' target='_blank'>
-        <UseAnimations animation={linkedin} size={30} wrapperStyle={{ color: 'white' }} />
+        <UseAnimations animation={linkedin} size={20} />
         </IconLink>
         <IconLink href='https://www.twitter.com/' target='_blank'>
-        <UseAnimations animation={twitter} size={30} wrapperStyle={{ color: 'white' }} />
+        <UseAnimations animation={twitter} size={20} />
         </IconLink>
         </IconsContainer>
     </Container>

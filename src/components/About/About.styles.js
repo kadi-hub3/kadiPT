@@ -1,19 +1,21 @@
 import styled from "styled-components";
+import { Link as LinkS } from "react-scroll";
 
 export const InfoContainer = styled.div`
 display: grid;
 z-index: 1;
-height: 100vh;
+height: 960px;
 width: 100%;
 margin-left: auto;
 margin-right:auto;
-padding: 0 24px;
+padding-left: 50px;
 justify-content: center;
 color: #fff;
 background: #1e2127;
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
+@media screen and (max-width: 768px) {
+  padding: 100px 100px;
+  height: 100%;
+}
 `;
 
 export const InfoRow= styled.div`
@@ -33,10 +35,12 @@ export const InfoRow= styled.div`
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
+  grid-area: col1;
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
+  grid-area: col2;
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
@@ -46,7 +50,7 @@ export const TextWrapper = styled.div`
 `;
 export const TextTitle = styled.h1`
 text{
-    font-size: 15rem; 
+    font-size: 10rem; 
     stroke: #f98923;
     font-weight: 700;
     stroke-width: 12;
@@ -67,15 +71,21 @@ text{
 
 `;
 export const TextContent = styled.p`
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 1px;
 
+  a{
+    color:rgb(5, 150, 105);
+    text-decoration:
+    none;
+  }
 `;
 
 
-export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
+export const Link=styled(LinkS)`
+  color: rgb(5, 150, 105);
+  cursor: pointer;
+
 `;
 
 export const ImgWrap = styled.div`

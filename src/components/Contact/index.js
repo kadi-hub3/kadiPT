@@ -1,6 +1,6 @@
 import React from 'react'
-import { InfoContainer,
-    InfoRow,
+import { ContactContainer,
+    ContactRow,
     Column1,
     Column2,
     TextWrapper,
@@ -12,8 +12,8 @@ import Form from '../Form'
 
 const ContactSection = ({imgStart, img, alt,id, description, topLine}) => {
     return (
-        <InfoContainer id={id}>
-        <InfoRow imgStart={imgStart}>
+        <ContactContainer id={id}>
+        <ContactRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
                 <TextTitle>
@@ -34,8 +34,8 @@ const ContactSection = ({imgStart, img, alt,id, description, topLine}) => {
             <Img src={img} alt={alt}/>
             </ImgWrap>
           </Column2>
-          </InfoRow>
-    </InfoContainer>
+          </ContactRow>
+    </ContactContainer>
     )
 }
 

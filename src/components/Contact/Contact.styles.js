@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
-export const InfoContainer = styled.div`
+export const ContactContainer = styled.div`
 display: grid;
 z-index: 1;
-height: 100vh;
+height: 960px;
 width: 100%;
 margin-left: auto;
 margin-right:auto;
-padding: 0 24px;
+padding-left: 50px;
 justify-content: center;
 color: #fff;
 background: #16181d;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+    height: 100%;
   }
 `;
 
-export const InfoRow= styled.div`
+export const ContactRow= styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   grid-gap: 30px;
@@ -33,10 +34,13 @@ export const InfoRow= styled.div`
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
+  grid-area: col1;
+
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
+  grid-area: col2;
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
@@ -46,7 +50,7 @@ export const TextWrapper = styled.div`
 `;
 export const TextTitle = styled.h1`
 text{
-    font-size: 15rem; 
+    font-size: 10rem; 
     stroke: #f98923;
     font-weight: 700;
     stroke-width: 12;
@@ -67,7 +71,7 @@ text{
 
 `;
 export const TextContent = styled.p`
-  font-size: 20px;
+  font-size: 14px;
   letter-spacing: 1px;
 
 `;

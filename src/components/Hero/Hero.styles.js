@@ -7,13 +7,14 @@ height: 100vh;
 width: 100%;
 margin-left: auto;
 margin-right:auto;
-padding: 0 24px;
+padding-left:50px;
 justify-content: center;
 color: #fff;
 background: #16181d;
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
+@media screen and (max-width: 768px) {
+  padding: 100px 0px;
+  height: 100%;
+}
 `;
 
 

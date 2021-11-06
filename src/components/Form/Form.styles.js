@@ -11,12 +11,10 @@ export const TextSection = styled.div`
   padding: 0 1rem;
   border-radius: 1rem;
   
-  @media screen and (max-width: 768px) {
-  }
   input {
     background:transparent;
     width: 80%;
-    padding: 1rem;
+    padding: .5rem;
     margin: 10px 0;
     outline: none;
     border: none;

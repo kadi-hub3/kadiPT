@@ -13,10 +13,10 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 2rem;
+  margin: 10px 25px;
   padding: ${({ big }) => (big ? "20px 80px" : "14px 44px")};
   color: ${({ dark }) => (dark ? "rgba(219, 39, 119)":"rgba(245, 158, 11)" )};
-  font-size: ${({ big }) => (big ? "18px" : "14px")};
+  font-size: ${({ big }) => (big ? "16px" : "14px")};
   &:hover {
     transform: translateY(-6px);
     background: rgba(245, 158, 11);

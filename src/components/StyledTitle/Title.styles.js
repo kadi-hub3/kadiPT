@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const MainTitle=styled.h2`
-    font-size: 40px;
+    font-size: 25px;
     color: #fff;
     letter-spacing: 5px;
     white-space: pre-line;
@@ -87,7 +87,7 @@ export const MainTitle=styled.h2`
    &:nth-child(9){
        animation-delay: .9s;
        color: rgba(219, 39, 119);
-       font-size: 3.5rem;
+       font-size: 3rem;
        transform: rotateX(60deg);
        -webkit-text-stroke: #333 2px ;
        &:hover{
@@ -280,7 +280,7 @@ export const BottomLine = styled.p`
   color: #00bfa6;
   margin-bottom: 2rem;
   padding: 2rem 2rem;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: 200;
   transform-origin: bottom left;
   text-shadow: 1px 1px 1px #333,

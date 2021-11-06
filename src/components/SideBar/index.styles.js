@@ -10,7 +10,7 @@ export const Container= styled.nav`
     flex-direction: column;
     justify-content:space-between;
     background:#16181d;
-	width: 4rem;
+	width: 3rem;
     filter: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03)) drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
     box-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     z-index:10;
@@ -39,6 +39,7 @@ export const NavContainer= styled.ul``
 
 export const IconLink = styled.a`
     cursor:pointer;
+    margin: 4px 0;
 `
 export const Logo= styled(LinkR)`
     width: 100%;
