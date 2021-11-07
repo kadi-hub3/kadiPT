@@ -13,6 +13,7 @@ color: #fff;
 background: #16181d;
 @media screen and (max-width: 768px) {
   padding: 100px 0px;
+  padding-left: 40px;
   height: 100%;
 }
 `;

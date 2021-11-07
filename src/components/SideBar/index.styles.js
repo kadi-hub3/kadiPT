@@ -8,12 +8,16 @@ export const Container= styled.nav`
     height:100vh;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    background:#16181d;
+    justify-content: space-between;
+    background: #16181d;
 	width: 3rem;
     filter: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03)) drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
     box-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     z-index:10;
+
+    @media screen and (max-width: 768px){
+        width:2rem;
+    }
 `
 
 export const IconsContainer=styled.div`
@@ -29,6 +33,7 @@ export const IconsContainer=styled.div`
 export const NavLink = styled(LinkS)`
   cursor: pointer;
   margin:6px 0;
+  
   &.active .sidebar-icon {
     background: rgb(5, 150, 105);
     color: #fff;
@@ -50,7 +55,6 @@ export const Logo= styled(LinkR)`
     cursor:pointer;
     text-decoration:none;
     img{
-        width:100%;
-        
+        width:100%;  
     }
 `

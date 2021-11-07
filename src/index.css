@@ -19,7 +19,12 @@
   border-radius: 1.5rem;
   box-shadow: 5px 35px 5px #16181d;
 }
-
+@media screen and (max-width: 768px) {
+  .sidebar-icon {
+    width: 1.8rem;
+    height: 2rem;
+  }
+}
 .sidebar-icon:hover {
   background: rgb(5, 150, 105);
   color: #fff;

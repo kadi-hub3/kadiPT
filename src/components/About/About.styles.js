@@ -13,7 +13,8 @@ justify-content: center;
 color: #fff;
 background: #1e2127;
 @media screen and (max-width: 768px) {
-  padding: 100px 100px;
+  padding: 100px 0;
+  padding-left: 40px;
   height: 100%;
 }
 `;
