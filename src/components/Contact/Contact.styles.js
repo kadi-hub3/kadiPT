@@ -52,10 +52,9 @@ export const TextWrapper = styled.div`
 `;
 export const TextTitle = styled.h1`
 text{
-    font-size: 10rem; 
+    font-size: 2rem; 
     stroke: #f98923;
-    font-weight: 700;
-    stroke-width: 12;
+    stroke-width: 3;
     background:red;
     animation: strokeText 5s linear;
 

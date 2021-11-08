@@ -14,7 +14,9 @@ export const TextSection = styled.div`
   input {
     background:transparent;
     width: 80%;
-    padding: .5rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 10px 5px;
     margin: 10px 0;
     outline: none;
     border: none;

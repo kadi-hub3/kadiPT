@@ -50,7 +50,9 @@ const FormComponent = () => {
         }}
       >
         {(props) => (
-            <Form>
+            <Form   action="https://formspree.io/f/xyybojpz"
+            method="POST"
+            id="my-form">
               <TextSection>
                 <TextInput
                   label="name"
@@ -60,7 +62,7 @@ const FormComponent = () => {
                 />
                 <TextInput
                   label="email"
-                  name="email"
+                  name="_replyto"
                   type="email"
                   placeholder="Enter your email "
                 />
@@ -68,11 +70,13 @@ const FormComponent = () => {
                   label="message"
                   name="message"
                   type="text"
+                  cols="30"
+                  rows="10"
                   className="message"
                   placeholder="Leave your message  "
                 />
             
-                <Button dark='true' type="submit">
+                <Button dark='true' type="submit" value="Send" >
                   {props.isSubmitting ? "Loading.." : "Send your Message"}
                 </Button>
               </TextSection>

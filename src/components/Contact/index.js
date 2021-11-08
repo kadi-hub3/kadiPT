@@ -17,7 +17,7 @@ const ContactSection = ({imgStart, img, alt,id, description, topLine}) => {
           <Column1>
             <TextWrapper>
                 <TextTitle>
-                <svg viewBox="10 30 2000 700">
+                <svg width='3000' height='60' viewBox="0 0 3000 60">
                   <text x="0%" y="60%" fill="transparent" text-anchor="start">
                     {topLine}
                   </text>

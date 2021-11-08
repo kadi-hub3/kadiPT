@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .sidebar-icon {
@@ -21,8 +22,8 @@
 }
 @media screen and (max-width: 768px) {
   .sidebar-icon {
-    width: 1.8rem;
-    height: 2rem;
+    width: 2rem;
+    height: 2.1rem;
   }
 }
 .sidebar-icon:hover {
@@ -36,6 +37,7 @@
 .sidebar-icon:hover .sidebar-tooltip {
   display: block;
   transform: scale(1.1);
+  overflow: visible !important;
 }
 .sidebar-tooltip {
   position: absolute;

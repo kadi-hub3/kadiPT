@@ -5,6 +5,7 @@ export const Button = styled.button`
   background: #161821;
   white-space: nowrap;
   outline: none;
+  cursor: pointer;
   border: ${({ primary }) => (primary ? "rgba(245, 158, 11)" : "rgba(219, 39, 119)")} 3px solid;
   text-decoration: none;
   max-width: 200px;

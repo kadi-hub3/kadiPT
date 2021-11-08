@@ -27,7 +27,7 @@ const Cloud3D = () => {
             var settings = {
               entries: entries,
               radius: "70%",
-              radiusMin: 75,
+              radiusMin: 50,
               bgDraw: true,
               bgColor: "transparent",
               opacityOver: 1.0,

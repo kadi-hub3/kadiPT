@@ -87,9 +87,9 @@ export const MainTitle=styled.h2`
    &:nth-child(9){
        animation-delay: .9s;
        color: rgba(219, 39, 119);
-       font-size: 3rem;
+       font-size: 2.5rem;
        transform: rotateX(60deg);
-       -webkit-text-stroke: #333 2px ;
+       -webkit-text-stroke: #333 .5px ;
        &:hover{
            animation: bounce linear infinite .4s;
            opacity: 1;   
