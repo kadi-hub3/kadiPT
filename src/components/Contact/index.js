@@ -10,7 +10,7 @@ import { ContactContainer,
     Img,} from './Contact.styles'
 import Form from '../Form'
 
-const ContactSection = ({imgStart, img, alt,id, description, topLine}) => {
+const ContactSection = ({imgStart, img, alt,id, description, headline}) => {
     return (
         <ContactContainer id={id}>
         <ContactRow imgStart={imgStart}>
@@ -19,7 +19,7 @@ const ContactSection = ({imgStart, img, alt,id, description, topLine}) => {
                 <TextTitle>
                 <svg width='3000' height='60' viewBox="0 0 3000 60">
                   <text x="0%" y="60%" fill="transparent" text-anchor="start">
-                    {topLine}
+                    {headline}
                   </text>
                 </svg>
                 </TextTitle>

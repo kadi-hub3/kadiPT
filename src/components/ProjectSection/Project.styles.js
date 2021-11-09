@@ -10,9 +10,12 @@ export const ProjectsContainer=styled.div`
     margin-left: auto;
     margin-right:auto;
     padding: 20px 24px;
+    overflow-x: hidden;
+
     @media screen and (max-width: 768px) {
         padding: 100px 0;
         height: 100%;
+        padding-left: 35px;
       }
 `
 
@@ -28,11 +31,11 @@ export const ProjectsWrapper=styled.div`
 
 
  
-    @media (max-width:991px){
-        grid-template-columns: repeat(auto-fill, minmax(300px,.8fr));
-        grid-template-rows:minmax(auto,auto);
-    }
-    @media screen and (min-width:768px){
+    // @media (max-width:991px){
+    //     grid-template-columns: repeat(auto-fill, minmax(300px,.8fr));
+    //     grid-template-rows:minmax(auto,auto);
+    // }
+    @media screen and (min-width:991px){
         grid-template-columns: repeat(auto-fill, minmax(300px,1fr)) !important;
         grid-template-rows:minmax(200px,auto);
     }
@@ -59,9 +62,30 @@ export const ProjBox=styled.div`
         grid-column: span 2;
         grid-row:span 2;
     }
-    @media (max-width:991px){
+    @media (max-width:768px){
         grid-column:unset !important;
         grid-row:unset !important;
     }
 
 `
+export const TextTitle = styled.h1`
+text{
+    font-size: 2rem; 
+    stroke: #f98923;
+    stroke-width: 3;
+    animation: strokeText 5s linear;
+    z-index:333;
+
+    @keyframes strokeText{
+        0%{
+            stroke-dasharray: 0 70%;
+            stroke-dashoffset: 10%; 
+        }
+        100%{
+            stroke-dasharray: 70% 0;
+            stroke-dashoffset: -10%;
+        }
+    }
+}
+
+`;

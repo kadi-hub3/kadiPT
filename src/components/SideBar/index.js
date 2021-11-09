@@ -20,33 +20,33 @@ const SideBar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact="true" >
+                exact="true"
+                >
           <SideBarIcon icon={<BsFillLightningFill  size="20" />} text='✨ Home '/>
         </NavLink>
         <NavLink to="about"
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact="true">
+                exact="true"
+                >
           <SideBarIcon icon={<IoPerson size="20" />} text='👱‍♀️ A Short Intro About Me '/>
         </NavLink>
         <NavLink to="projects"
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact="true">
-         <SideBarIcon icon={<BsGearFill size="20"/>} text='📦 🚀 My Side Projects' to="projects"
-                smooth={true}
-                duration={500}/>
+                exact="true"
+                >
+         <SideBarIcon icon={<BsGearFill size="20"/>} text='📦 🚀 My Side Projects'/>
         </NavLink>
         <NavLink to="contact"
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact="true">
-          <SideBarIcon icon={<BsPlus size="20"/>}  text='Contact Me for Any Inquiries 📨' to="contact"
-                smooth={true}
-                duration={500}/>
+                exact="true"
+                >
+          <SideBarIcon icon={<BsPlus size="20"/>}  text='Contact Me for Any Inquiries 📨'/>
         </NavLink>
         </NavContainer>
         <IconsContainer>

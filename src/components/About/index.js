@@ -18,7 +18,7 @@ const About = ({imgStart, id, headline, description}) => {
         <InfoRow  imgStart={imgStart}>
           <Column1>
             <TextWrapper>
-                <TextTitle>
+            <TextTitle>
                 <svg width='3000' height='60' viewBox="0 0 3000 60">
                   <text x="0%" y="60%" fill="transparent" text-anchor="start">
                     {headline}

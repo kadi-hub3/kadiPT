@@ -11,6 +11,7 @@ padding-left:50px;
 justify-content: center;
 color: #fff;
 background: #16181d;
+overflow-x: hidden;
 
 @media screen and (max-width: 768px) {
   padding: 100px 0px;

@@ -39,7 +39,7 @@ export const contactData = {
   id: "contact",
   lightBg: false,
   lightText: true,
-  topLine: "Contact Me",
+  headline: "Contact Me",
   description:
     "I'm interested in web developement, especially front-end development. If you have any request or question, dont't hesitate to contact me using form below.",
   buttonLabel: "Send Your Message",

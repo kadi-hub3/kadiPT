@@ -12,6 +12,8 @@ padding-left: 50px;
 justify-content: center;
 color: #fff;
 background: #1e2127;
+overflow-x: hidden;
+
 @media screen and (max-width: 768px) {
   padding: 100px 0;
   padding-left: 40px;
@@ -70,13 +72,12 @@ text{
 
 `;
 export const TextContent = styled.p`
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1px;
 
   a{
     color:rgb(5, 150, 105);
-    text-decoration:
-    none;
+    text-decoration: none;
   }
 `;
 
@@ -88,12 +89,6 @@ export const Link=styled(LinkS)`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
   height: 100%;
-`;
-
-export const Img = styled.img`
   width: 100%;
-  margin: 0 0 10px 0;
-  padding: 0;
 `;

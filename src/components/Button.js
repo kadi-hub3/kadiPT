@@ -20,7 +20,7 @@ export const Button = styled.button`
   font-size: ${({ big }) => (big ? "16px" : "14px")};
   &:hover {
     transform: translateY(-6px);
-    background: rgba(245, 158, 11);
+    background: ${({ primary }) => (primary ? "rgba(245, 158, 11)" : "rgba(219, 39, 119)")};
     color: #222;
   }
 `;

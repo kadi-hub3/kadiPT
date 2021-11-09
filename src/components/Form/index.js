@@ -1,7 +1,8 @@
 import { Formik, useField, Form } from "formik";
 import * as Yup from "yup";
-import { Section, TextSection } from "./Form.styles";
+import {TextSection } from "./Form.styles";
 import { Button } from "../Button";
+import emailjs from 'emailjs-com'
 
 const TextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
@@ -16,6 +17,11 @@ const TextInput = ({ label, ...props }) => {
 };
 
 const FormComponent = () => {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_t3ufpep','template_obcna0q', e.target, 'user_bNOdufVT2MZm2EzAHybGn')
+  }
     return (
       <Formik
         initialValues={{
@@ -50,9 +56,7 @@ const FormComponent = () => {
         }}
       >
         {(props) => (
-            <Form   action="https://formspree.io/f/xyybojpz"
-            method="POST"
-            id="my-form">
+            <Form onSubmit={sendEmail}>
               <TextSection>
                 <TextInput
                   label="name"
@@ -62,7 +66,7 @@ const FormComponent = () => {
                 />
                 <TextInput
                   label="email"
-                  name="_replyto"
+                  name="user_email"
                   type="email"
                   placeholder="Enter your email "
                 />
@@ -70,8 +74,7 @@ const FormComponent = () => {
                   label="message"
                   name="message"
                   type="text"
-                  cols="30"
-                  rows="10"
+                  rows="6"
                   className="message"
                   placeholder="Leave your message  "
                 />

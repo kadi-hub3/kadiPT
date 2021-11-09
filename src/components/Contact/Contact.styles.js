@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
 display: grid;
-z-index: 1;
 height: 960px;
 width: 100%;
 margin-left: auto;
 margin-right:auto;
 padding-left: 50px;
 justify-content: center;
+overflow-x: hidden;
 color: #fff;
 background: #16181d;
  @media screen and (max-width: 768px) {
@@ -55,7 +55,6 @@ text{
     font-size: 2rem; 
     stroke: #f98923;
     stroke-width: 3;
-    background:red;
     animation: strokeText 5s linear;
 
     @keyframes strokeText{
