@@ -21,7 +21,7 @@ export const ProjectsContainer=styled.div`
 
 export const ProjectsWrapper=styled.div`
     max-width:90%;
-    height:90%;
+    height:100%;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     grid-template-rows:minmax(200px,auto);
@@ -65,27 +65,10 @@ export const ProjBox=styled.div`
     @media (max-width:768px){
         grid-column:unset !important;
         grid-row:unset !important;
+
+        &:nth-child(1){
+            height: 100%;
+        }
     }
 
 `
-export const TextTitle = styled.h1`
-text{
-    font-size: 2rem; 
-    stroke: #f98923;
-    stroke-width: 3;
-    animation: strokeText 5s linear;
-    z-index:333;
-
-    @keyframes strokeText{
-        0%{
-            stroke-dasharray: 0 70%;
-            stroke-dashoffset: 10%; 
-        }
-        100%{
-            stroke-dasharray: 70% 0;
-            stroke-dashoffset: -10%;
-        }
-    }
-}
-
-`;

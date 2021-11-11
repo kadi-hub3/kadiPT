@@ -36,7 +36,6 @@
 .sidebar-icon:hover .sidebar-tooltip {
   display: block;
   transform: scale(1.1);
-  overflow: visible !important;
 }
 .sidebar-tooltip {
   position: absolute;

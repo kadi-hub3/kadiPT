@@ -4,41 +4,38 @@ import {
     Column1,
     Column2,
     TextWrapper,
-    Topline,
-    Heading,
-    Subtitle,
     BtnWrap,
     ImgWrap,
     Img,
-  } from './Hero.styles'
+  } from './MainComp.styles'
 import Title from '../StyledTitle'
-import{ Button }from '../Button'
+import{ StyledButton }from '../Button'
+
 const InfoSection = ({
   img,
   imgStart,
   alt,
   buttonLabel,
-  id
-
+  id,
+  lightBg
 }) => {
     return (
-        <InfoContainer id={id}>
+        <InfoContainer id={id} lightBg={lightBg}>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
                 <Title/>
                 <BtnWrap>
-                  <Button
-                    to="home"
+                  <StyledButton
+                    to="contact"
                     smooth={true}
                     duration={500}
                     spy={true}
                     exact="true"
-                    offset={-80}
                     primary='true'
                   >
                     {buttonLabel}
-                  </Button>
+                  </StyledButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

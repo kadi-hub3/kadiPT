@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled, {css} from "styled-components";
+import { Link as LinkS} from "react-scroll";
 
-export const Button = styled.button`
+const buttonStyles = css`
   background: #161821;
   white-space: nowrap;
   outline: none;
@@ -23,4 +23,6 @@ export const Button = styled.button`
     background: ${({ primary }) => (primary ? "rgba(245, 158, 11)" : "rgba(219, 39, 119)")};
     color: #222;
   }
-`;
+`
+export const StyledButton = styled(LinkS)`${buttonStyles}`;
+export const ButtonA = styled.a`${buttonStyles}`;

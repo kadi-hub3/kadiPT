@@ -1,24 +1,21 @@
 import styled from "styled-components";
-import { Link as LinkS } from "react-scroll";
-
+import {Link as LinkS} from 'react-scroll'
 export const InfoContainer = styled.div`
 display: grid;
-z-index: 1;
-height: 960px;
+height: 860px;
 width: 100%;
 margin-left: auto;
 margin-right:auto;
 padding-left: 50px;
-justify-content: center;
-color: #fff;
-background: #1e2127;
 overflow-x: hidden;
-
-@media screen and (max-width: 768px) {
-  padding: 100px 0;
-  padding-left: 40px;
-  height: 100%;
-}
+color: #fff;
+background: ${({lightBg})=>lightBg? '#1e2127':'#16181d'};
+ @media screen and (max-width: 768px) {
+      padding: 100px 0;
+      padding-left: 40px;
+      height: 100%;
+    }
+  
 `;
 
 export const InfoRow= styled.div`
@@ -39,6 +36,7 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
+
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
@@ -71,6 +69,7 @@ text{
 }
 
 `;
+
 export const TextContent = styled.p`
   font-size: 14px;
   letter-spacing: 1px;
@@ -78,6 +77,7 @@ export const TextContent = styled.p`
   a{
     color:rgb(5, 150, 105);
     text-decoration: none;
+    cursor: pointer;
   }
 `;
 
@@ -88,7 +88,22 @@ export const Link=styled(LinkS)`
 
 `;
 
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
 export const ImgWrap = styled.div`
+  max-width: 555px;
   height: 100%;
   width: 100%;
+
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  margin: 0 0 10px 0;
+  padding: 0;
 `;

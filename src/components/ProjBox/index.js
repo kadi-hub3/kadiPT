@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from './Box.styles'
-import {Button} from '../Button'
+import {ButtonA} from '../Button'
 
 const ProjBox = ({img,title,description, link}) => {
     return (
@@ -12,9 +12,7 @@ const ProjBox = ({img,title,description, link}) => {
             <div className='content'>
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <Button primary='true'>
-                <a href={link} target='_blank'>View Project</a>
-                </Button>
+                <ButtonA primary='true' href={link} target='_blank'>View Project</ButtonA>
             </div>
         </div>
     </Card>

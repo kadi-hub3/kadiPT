@@ -22,7 +22,7 @@ const SideBar = () => {
                 spy={true}
                 exact="true"
                 >
-          <SideBarIcon icon={<BsFillLightningFill  size="20" />} text='✨ Home '/>
+          <SideBarIcon icon={<BsFillLightningFill  size="22" />} text='✨ Home '/>
         </NavLink>
         <NavLink to="about"
                 smooth={true}
@@ -30,7 +30,7 @@ const SideBar = () => {
                 spy={true}
                 exact="true"
                 >
-          <SideBarIcon icon={<IoPerson size="20" />} text='👱‍♀️ A Short Intro About Me '/>
+          <SideBarIcon icon={<IoPerson size="22" />} text='👱‍♀️ A Short Intro About Me '/>
         </NavLink>
         <NavLink to="projects"
                 smooth={true}
@@ -38,7 +38,7 @@ const SideBar = () => {
                 spy={true}
                 exact="true"
                 >
-         <SideBarIcon icon={<BsGearFill size="20"/>} text='📦 🚀 My Side Projects'/>
+         <SideBarIcon icon={<BsGearFill size="22"/>} text='📦 🚀 My Side Projects'/>
         </NavLink>
         <NavLink to="contact"
                 smooth={true}
@@ -46,18 +46,18 @@ const SideBar = () => {
                 spy={true}
                 exact="true"
                 >
-          <SideBarIcon icon={<BsPlus size="20"/>}  text='Contact Me for Any Inquiries 📨'/>
+          <SideBarIcon icon={<BsPlus size="22"/>}  text='Contact Me for Any Inquiries 📨'/>
         </NavLink>
         </NavContainer>
         <IconsContainer>
          <IconLink href='https://www.github.com/kadi-hub3' target='_blank'>
-        <UseAnimations animation={github} size={20}  />
+        <UseAnimations animation={github} size={24}  />
         </IconLink>
         <IconLink href='https://www.linkedin.com/in/kadi-moudarrif/' target='_blank'>
-        <UseAnimations animation={linkedin} size={20} />
+        <UseAnimations animation={linkedin} size={24} />
         </IconLink>
         <IconLink href='https://www.twitter.com/' target='_blank'>
-        <UseAnimations animation={twitter} size={20} />
+        <UseAnimations animation={twitter} size={24} />
         </IconLink>
         </IconsContainer>
     </Container>

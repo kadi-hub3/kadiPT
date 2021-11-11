@@ -1,5 +1,8 @@
 import svg1 from "../images/svg1.svg";
 import contactSvg from '../images/contact.svg'
+import {Link} from './MainComp/MainComp.styles'
+import Cloud3D from './3dCloud'
+
 export const homeData = {
   id: "home",
   lightBg: false,
@@ -17,24 +20,6 @@ export const homeData = {
   darkText: false,
 };
 
-
-export const aboutData = {
-  id: "about",
-  lightBg: false,
-  lightText: true,
-  headline: "About Me",
-  description:
-    `Self-taught front-end developer, fascinated by IT and curious about the full-spectrum of cybersecurity.<br/><br/>
-    HTML, CSS, Sass, JS, building small and medium web apps with React, plugins, features, animations and coding interactive layouts.<br/><br/>
-    Passionate eye for innovative, simplistic UI design and interested in the entire front-end spectrum.<br/><br/>
-    Visit my <span>LinkedIn </span>for more details or just contact me.`,
-  imgStart: true,
-  img: svg1,
-  dark: true,
-  primary: true,
-  darkText: false,
-};
-
 export const contactData = {
   id: "contact",
   lightBg: false,
@@ -46,6 +31,25 @@ export const contactData = {
   imgStart: false,
   img: contactSvg,
   alt: "transactions",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
+
+const aboutParagraph = <p> Self-taught front-end developer, fascinated by IT and curious about the full-spectrum of cybersecurity.<br/><br/>
+HTML, CSS, Sass, JS, building small and medium web apps with React, plugins, features, animations and coding interactive layouts.<br/><br/>
+Passionate eye for innovative, simplistic UI design and interested in the entire front-end spectrum.<br/><br/>
+Visit my <a href="https://www.linkedin.com/in/kadi-moudarrif/">LinkedIn </a>for more details or just <Link to='contact' smooth={true}> contact</Link> me.</p>
+export const aboutData = {
+  id: "about",
+  lightBg: true,
+  lightText: true,
+  headline: "About Me",
+  description: aboutParagraph,
+  buttonLabel: "Send Your Message",
+  imgStart: false,
+  img: <Cloud3D/>,
+  alt: "",
   dark: true,
   primary: true,
   darkText: false,

@@ -1,7 +1,7 @@
 import { Formik, useField, Form } from "formik";
 import * as Yup from "yup";
 import {TextSection } from "./Form.styles";
-import { Button } from "../Button";
+import { StyledButton } from "../Button";
 import emailjs from 'emailjs-com'
 
 const TextInput = ({ label, ...props }) => {
@@ -79,9 +79,9 @@ const FormComponent = () => {
                   placeholder="Leave your message  "
                 />
             
-                <Button dark='true' type="submit" value="Send" >
+                <StyledButton dark='true' type="submit" value="Send" >
                   {props.isSubmitting ? "Loading.." : "Send your Message"}
-                </Button>
+                </StyledButton>
               </TextSection>
             </Form>
         )}

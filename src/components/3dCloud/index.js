@@ -29,6 +29,7 @@ const Cloud3D = () => {
               radius: "70%",
               radiusMin: 75,
               width: '100%',
+              height: '100%',
               bgColor: "transparent",
               opacityOver: 1.0,
               opacityOut: 0.05,
@@ -42,7 +43,7 @@ const Cloud3D = () => {
               fontStretch: "normal",
               fontToUpperCase: true,
             };
-            var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'scroll-zoom'), settings );
+            new SVG3DTagCloud( document.getElementById( 'scroll-zoom'), settings );
 
           });
       })
