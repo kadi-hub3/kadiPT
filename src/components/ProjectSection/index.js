@@ -25,14 +25,14 @@ const ProjectSection = ({id,headline,img1,title1,link1, description1,img2,title2
       tl.from(
         [box1,box2,box3],
         1.2,
-        { y: 10, opacity: 0, ease: Power3.easeOut, delay: 0.8 },
-        0.85
+        { y: 10, opacity: 0, ease: Power3.easeOut, delay: 0.5 },
+        0.55
       );
       tl.from(
         [box4,box5,box6],
         1.2,
-        { y: -10, opacity: 0, ease: Power3.easeOut, delay: 0.7 },
-        0.75
+        { y: -10, opacity: 0, ease: Power3.easeOut, delay: 0.6 },
+        0.65
       );
    
     });

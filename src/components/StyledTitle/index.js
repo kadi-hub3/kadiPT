@@ -1,11 +1,9 @@
 import React from 'react'
 import {BottomLine, MainTitle} from './Title.styles'
-import {homeData} from '../Data'
+import {homeData} from '../MainComp/Data'
 
 const Title = () => {
-
     const title= homeData.headline.split('')
-
     return (
         <>
         <MainTitle>

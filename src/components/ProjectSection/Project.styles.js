@@ -71,4 +71,11 @@ export const ProjBox=styled.div`
         }
     }
 
+    @media (min-width:991px){
+        &:nth-child(5){
+            grid-column: span 1;
+            grid-row:span 1;
+        }
+    }
+
 `

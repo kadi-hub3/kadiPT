@@ -43,7 +43,7 @@ const About = ({imgStart, id, headline, description, lightBg, img, alt}) => {
   });
     return (
         <InfoContainer id={id} lightBg={lightBg}>
-        <InfoRow  imgStart={imgStart}>
+        <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
             <TextTitle ref={(el) => (title = el)}>

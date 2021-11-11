@@ -21,7 +21,7 @@ background: ${({lightBg})=>lightBg? '#1e2127':'#16181d'};
 export const InfoRow= styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
-  grid-gap: 30px;
+  grid-gap: 20px;
   align-items: center;
   justify-content: center;
   grid-template-areas: ${({ imgStart }) =>

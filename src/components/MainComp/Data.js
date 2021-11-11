@@ -1,7 +1,7 @@
-import svg1 from "../images/svg1.svg";
-import contactSvg from '../images/contact.svg'
-import {Link} from './MainComp/MainComp.styles'
-import Cloud3D from './3dCloud'
+import svg1 from "../../images/svg1.svg";
+import contactSvg from '../../images/contact.svg'
+import {Link} from './MainComp.styles'
+import Cloud3D from '../3dCloud'
 
 export const homeData = {
   id: "home",
@@ -14,22 +14,6 @@ export const homeData = {
   buttonLabel: "Contact Me!",
   imgStart: false,
   img: svg1,
-  alt: "transactions",
-  dark: true,
-  primary: true,
-  darkText: false,
-};
-
-export const contactData = {
-  id: "contact",
-  lightBg: false,
-  lightText: true,
-  headline: "Contact Me",
-  description:
-    "I'm interested in web developement, especially front-end development. If you have any request or question, dont't hesitate to contact me using form below.",
-  buttonLabel: "Send Your Message",
-  imgStart: false,
-  img: contactSvg,
   alt: "transactions",
   dark: true,
   primary: true,
@@ -54,3 +38,20 @@ export const aboutData = {
   primary: true,
   darkText: false,
 };
+
+export const contactData = {
+  id: "contact",
+  lightBg: false,
+  lightText: true,
+  headline: "Contact Me",
+  description:
+    "I'm interested in web developement, especially front-end development. If you have any request or question, dont't hesitate to contact me using form below.",
+  buttonLabel: "Send Your Message",
+  imgStart: false,
+  img: contactSvg,
+  alt: "transactions",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
+
