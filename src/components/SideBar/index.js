@@ -14,7 +14,7 @@ const SideBar = () => {
   };
   return (
     <Container>
-      <Logo to="/" onClick={scrollHome}><img src={logo}/></Logo>
+      <Logo to="/" onClick={scrollHome}><img src={logo} alt='logo'/></Logo>
       <NavContainer>
         <NavLink to="home"
                 smooth={true}
@@ -67,7 +67,7 @@ const SideBar = () => {
 const SideBarIcon = ({ icon, text = 'tooltip 💡' }) => (
   <div className="sidebar-icon">
     {icon}
-    <span class="sidebar-tooltip">
+    <span className="sidebar-tooltip">
       {text}
     </span>
   </div >

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+export const Form = styled.form``
+
 export const TextSection = styled.div`
   width: 90%;
   height: 100%;
@@ -10,13 +12,13 @@ export const TextSection = styled.div`
   padding: 0 1rem;
   border-radius: 1rem;
   
-  input {
+  input, textarea {
     background:transparent;
     width: 80%;
     font-style: italic;
     letter-spacing: 1px;
     padding: 10px 5px;
-    margin: 10px 0;
+    margin: 20px 0;
     outline: none;
     border: none;
     color: #fff;

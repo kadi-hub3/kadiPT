@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll'
+
 export const InfoContainer = styled.div`
 display: grid;
-height: 860px;
+height: 800px;
 width: 100%;
 margin-left: auto;
 margin-right:auto;
 padding-left: 50px;
 overflow-x: hidden;
+align-items: center;
+justify-content: center;
 color: #fff;
 background: ${({lightBg})=>lightBg? '#1e2127':'#16181d'};
  @media screen and (max-width: 768px) {
@@ -16,6 +19,16 @@ background: ${({lightBg})=>lightBg? '#1e2127':'#16181d'};
       height: 100%;
     }
   
+.btn-hero{
+  path{
+    stroke: rgba(245, 158, 11);
+  }
+  &:hover{
+    path{
+      stroke: #333;
+    }
+  }
+}
 `;
 
 export const InfoRow= styled.div`
@@ -45,6 +58,8 @@ export const Column2 = styled.div`
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
+  height: 100%;
+  width: 100%;
   padding-bottom: 20px;
   letter-spacing: 1px;
   line-height: 1.5;

@@ -7,7 +7,7 @@ const Title = () => {
     return (
         <>
         <MainTitle>
-            {title.map((letter)=><span>{letter}</span>)}
+            {title.map((letter, id)=><span key={id}>{letter}</span>)}
         </MainTitle>
         <BottomLine>{homeData.topLine}</BottomLine>
         </>

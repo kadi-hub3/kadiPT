@@ -26,3 +26,4 @@ const buttonStyles = css`
 `
 export const StyledButton = styled(LinkS)`${buttonStyles}`;
 export const ButtonA = styled.a`${buttonStyles}`;
+export const Button = styled.button`${buttonStyles}`;

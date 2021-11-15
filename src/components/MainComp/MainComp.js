@@ -1,5 +1,4 @@
 import React, {useRef, useEffect} from 'react'
-import Cloud3D from '../3dCloud'
 import { InfoContainer,
     InfoRow,
     Column1,
@@ -8,14 +7,13 @@ import { InfoContainer,
     TextTitle,
     TextContent,
     ImgWrap,
-    Link,
-    Img,} from './MainComp.styles'
+   } from './MainComp.styles'
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const About = ({imgStart, id, headline, description, lightBg, img, alt}) => {
+const About = ({imgStart, id, headline, description, lightBg, img, plus}) => {
   let title = useRef(null);
   let p = useRef(null);
   let imgsap = useRef(null);
@@ -48,13 +46,14 @@ const About = ({imgStart, id, headline, description, lightBg, img, alt}) => {
             <TextWrapper>
             <TextTitle ref={(el) => (title = el)}>
               <svg width='3000' height='60' viewBox="0 0 3000 60">
-                  <text x="0%" y="60%" fill="transparent" text-anchor="start">
+                  <text x="0%" y="60%" fill="transparent" textAnchor="start">
                     {headline}
                   </text>
                 </svg>
                 </TextTitle>
                 <TextContent ref={(el) => (p = el)}>{description}</TextContent>
             </TextWrapper>
+            {plus}
           </Column1>
           <Column2>
             <ImgWrap ref={(el) => (imgsap = el)}>

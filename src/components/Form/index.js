@@ -1,92 +1,58 @@
-import { Formik, useField, Form } from "formik";
-import * as Yup from "yup";
-import {TextSection } from "./Form.styles";
-import { StyledButton } from "../Button";
-import emailjs from 'emailjs-com'
+import {TextSection, Form } from "./Form.styles";
+import { Button } from "../Button";
+import { useForm, ValidationError } from '@formspree/react';
 
-const TextInput = ({ label, ...props }) => {
-  const [field, meta] = useField(props);
-
-  return (
-    <>
-      <label htmlFor={props.id || props.name}></label>
-      <input {...field} {...props} />
-      {meta.touched && meta.error ? <div className="">{meta.error}</div> : null}
-    </>
-  );
-};
 
 const FormComponent = () => {
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_t3ufpep','template_obcna0q', e.target, 'user_bNOdufVT2MZm2EzAHybGn')
+  const [state, handleSubmit] = useForm("xyybojpz");
+  if (state.succeeded) {
+      return <h3>Thanks for your message, I'll get back to you ASAP!</h3>;
   }
     return (
-      <Formik
-        initialValues={{
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-          acceptedTerms: false,
-        }}
-        validationSchema={Yup.object({
-          name: Yup.string()
-            .min(3, "Must be at least 3 characters long")
-            .max(45, "Must be  15 characters long or less")
-            .required("Make sure to enter your name"),
-          email: Yup.string()
-            .email("Make sure to enter a valid email address")
-            .required("Make sure to enter your email address"),
-          phone: Yup.string().max("Make sure to enter a valid phone number"),
-          message: Yup.string()
-            .max(200, "Must be  200 characters long or less")
-            .required("Make sure to enter your message"),
-          acceptedTerms: Yup.boolean()
-            .required("Required")
-            .oneOf([true], "To proceed, you must first accept the terms"),
-        })}
-        onSubmit={(values, { setSubmitting, resetForm }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            resetForm();
-            setSubmitting(false);
-          }, 3000);
-        }}
-      >
-        {(props) => (
-            <Form onSubmit={sendEmail}>
+            <Form onSubmit={handleSubmit}>
               <TextSection>
-                <TextInput
-                  label="name"
-                  name="name"
-                  type="text"
-                  placeholder="Enter your first name"
-                />
-                <TextInput
-                  label="email"
-                  name="user_email"
-                  type="email"
-                  placeholder="Enter your email "
-                />
-                <TextInput
-                  label="message"
-                  name="message"
-                  type="text"
-                  rows="6"
-                  className="message"
-                  placeholder="Leave your message  "
-                />
-            
-                <StyledButton dark='true' type="submit" value="Send" >
-                  {props.isSubmitting ? "Loading.." : "Send your Message"}
-                </StyledButton>
+              <input
+                id="name"
+                type="name" 
+                name="name"
+                placeholder='Please enter your name '
+              />
+              <ValidationError 
+                prefix="Name" 
+                field="name"
+                errors={state.errors}
+              />
+              <input
+                id="email"
+                type="email" 
+                name="email"
+                placeholder='Please enter your email '
+
+              />
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
+              />
+              <textarea
+                id="message"
+                name="message"
+                placeholder='Leave your message '
+                rows='5'
+
+
+              />
+              <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={state.errors}
+              />
+              <Button dark="true" type="submit" disabled={state.submitting}>
+                Send your message
+              </Button>
               </TextSection>
             </Form>
-        )}
-      </Formik>
-    );
+      );
   };
   
   export default FormComponent;

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const MainTitle=styled.h2`
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     letter-spacing: 5px;
     white-space: pre-line;
-    line-height: 1.5;
+    line-height: 1.75;
     text-shadow: 1px 1px 1px #333,
     1px 2px 1px #333,
     1px 3px 1px #333,
@@ -20,6 +20,7 @@ export const MainTitle=styled.h2`
     1px 22px 10px rgba(16,16,16,0.2),
     1px 25px 35px rgba(16,16,16,0.2),
     1px 30px 60px rgba(16,16,16,0.4);
+    font-weight: 700;
 
     span{
         animation: animate 2s linear forwards;
