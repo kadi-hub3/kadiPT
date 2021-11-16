@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const MainTitle=styled.h2`
     font-size: 30px;
     color: #fff;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     white-space: pre-line;
     line-height: 1.75;
     text-shadow: 1px 1px 1px #333,

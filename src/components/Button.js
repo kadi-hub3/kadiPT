@@ -17,7 +17,7 @@ const buttonStyles = css`
   margin: 10px 25px;
   padding: ${({ big }) => (big ? "20px 80px" : "14px 44px")};
   color: ${({ dark }) => (dark ? "rgba(219, 39, 119)":"rgba(245, 158, 11)" )};
-  font-size: ${({ big }) => (big ? "16px" : "14px")};
+  font-size: ${({ big }) => (big ? "16px" : "12px")};
   &:hover {
     transform: translateY(-6px);
     background: ${({ primary }) => (primary ? "rgba(245, 158, 11)" : "rgba(219, 39, 119)")};

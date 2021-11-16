@@ -27,7 +27,7 @@ const InfoSection = ({
                 <Title/>
                 <BtnWrap>
                   <StyledButton
-                    to="contact"
+                    to="about"
                     smooth={true}
                     duration={500}
                     spy={true}
