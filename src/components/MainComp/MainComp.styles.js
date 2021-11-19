@@ -2,34 +2,34 @@ import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll'
 
 export const InfoContainer = styled.div`
-display: grid;
-height: 800px;
-width: 100%;
-margin-left: auto;
-margin-right:auto;
-padding-left: 50px;
-overflow-x: hidden;
-align-items: center;
-justify-content: center;
-color: #fff;
-background: ${({lightBg})=>lightBg? '#1e2127':'#16181d'};
- @media screen and (max-width: 768px) {
-      padding: 100px 0;
-      padding-left: 40px;
-      height: 100%;
-    }
-  
-.btn-hero{
-  path{
-    stroke: rgba(245, 158, 11);
-  }
-  &:hover{
+  display: grid;
+  height: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right:auto;
+  padding-left: 50px;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: ${({lightBg})=>lightBg? '#1e2127':'#16181d'};
+  @media screen and (max-width: 768px) {
+        padding: 100px 0;
+        padding-left: 40px;
+        height: 100%;
+      }
+    
+  .btn-hero{
     path{
-      stroke: #333;
+      stroke: rgba(245, 158, 11);
+    }
+    &:hover{
+      path{
+        stroke: #333;
+      }
     }
   }
-}
-`;
+  `;
 
 export const InfoRow= styled.div`
   display: grid;
@@ -64,25 +64,25 @@ export const TextWrapper = styled.div`
   letter-spacing: 1px;
   line-height: 1.5;
 `;
+
 export const TextTitle = styled.h1`
-text{
-    font-size: 2rem; 
-    stroke: #f98923;
-    stroke-width: 3;
-    animation: strokeText 5s linear;
+  text{
+      font-size: 2rem; 
+      stroke: #f98923;
+      stroke-width: 3;
+      animation: strokeText 5s linear;
 
-    @keyframes strokeText{
-        0%{
-            stroke-dasharray: 0 70%;
-            stroke-dashoffset: 10%; 
-        }
-        100%{
-            stroke-dasharray: 70% 0;
-            stroke-dashoffset: -10%;
-        }
-    }
-}
-
+      @keyframes strokeText{
+          0%{
+              stroke-dasharray: 0 70%;
+              stroke-dashoffset: 10%; 
+          }
+          100%{
+              stroke-dasharray: 70% 0;
+              stroke-dashoffset: -10%;
+          }
+      }
+  }
 `;
 
 export const TextContent = styled.p`
@@ -100,7 +100,6 @@ export const TextContent = styled.p`
 export const Link=styled(LinkS)`
   color: rgb(5, 150, 105);
   cursor: pointer;
-
 `;
 
 

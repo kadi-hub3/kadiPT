@@ -1,4 +1,4 @@
-import svg1 from "../../images/svg1.svg";
+import svg1 from "../../images/hero.svg";
 import contactSvg from '../../images/contact.svg'
 import {Link} from './MainComp.styles'
 import Cloud3D from '../3dCloud'
@@ -8,6 +8,11 @@ import UseAnimations from 'react-useanimations';
 import arrowDown from 'react-useanimations/lib/arrowDown'
 
 const heroBtn = <>About Me <UseAnimations animation={arrowDown} size={30} className='btn-hero'/></>
+
+const aboutParagraph = <> Self-taught front-end developer, fascinated by IT and curious about the full-spectrum of cybersecurity.<br/><br/>
+HTML, CSS, Sass, JS, building small and medium web apps with React, plugins, features, animations and coding interactive layouts.<br/><br/>
+Passionate eye for innovative, simplistic UI design and interested in the entire front-end spectrum.<br/><br/>
+Visit my <a href="https://www.linkedin.com/in/kadi-moudarrif/">LinkedIn </a>for more details or just <Link to='contact' smooth={true}> contact</Link> me.</>
 
 export const homeData = {
   id: "home",
@@ -25,11 +30,6 @@ export const homeData = {
   primary: true,
   darkText: false,
 };
-
-const aboutParagraph = <> Self-taught front-end developer, fascinated by IT and curious about the full-spectrum of cybersecurity.<br/><br/>
-HTML, CSS, Sass, JS, building small and medium web apps with React, plugins, features, animations and coding interactive layouts.<br/><br/>
-Passionate eye for innovative, simplistic UI design and interested in the entire front-end spectrum.<br/><br/>
-Visit my <a href="https://www.linkedin.com/in/kadi-moudarrif/">LinkedIn </a>for more details or just <Link to='contact' smooth={true}> contact</Link> me.</>
 
 export const aboutData = {
   id: "about",

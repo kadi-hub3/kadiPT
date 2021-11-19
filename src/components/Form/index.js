@@ -27,7 +27,6 @@ const FormComponent = () => {
                 type="email" 
                 name="email"
                 placeholder='Please enter your email '
-
               />
               <ValidationError 
                 prefix="Email" 
@@ -39,8 +38,6 @@ const FormComponent = () => {
                 name="message"
                 placeholder='Leave your message '
                 rows='5'
-
-
               />
               <ValidationError 
                 prefix="Message" 

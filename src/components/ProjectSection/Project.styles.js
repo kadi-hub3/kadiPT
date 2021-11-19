@@ -15,7 +15,6 @@ export const ProjectsContainer=styled.div`
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
-        height: 100%;
         padding-left: 35px;
       }
 `
@@ -30,12 +29,6 @@ export const ProjectsWrapper=styled.div`
     grid-gap:20px;
     overflow: hidden;
 
-
- 
-    // @media (max-width:991px){
-    //     grid-template-columns: repeat(auto-fill, minmax(300px,.8fr));
-    //     grid-template-rows:minmax(auto,auto);
-    // }
     @media screen and (min-width:991px){
         grid-template-columns: repeat(auto-fill, minmax(300px,1fr)) !important;
         grid-template-rows:minmax(200px,auto);
