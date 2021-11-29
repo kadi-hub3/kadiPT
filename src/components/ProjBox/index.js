@@ -2,11 +2,11 @@ import React from 'react'
 import { Card } from './Box.styles'
 import {ButtonA} from '../Button'
 
-const ProjBox = ({img,title,description, link}) => {
+const ProjBox = ({image,title,description, link}) => {
     return (
         <Card>
         <div className='imgBx'>
-            <img src={img} alt='' />
+            <img src={image} alt='' />
         </div>
         <div className='contentBx'>
             <div className='content'>

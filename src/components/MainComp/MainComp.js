@@ -10,6 +10,7 @@ import { InfoContainer,
    } from './MainComp.styles'
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import SubTitle from '../SubTitle'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,15 +45,11 @@ const About = ({imgStart, id, headline, description, lightBg, img, plus}) => {
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
-            <TextTitle ref={(el) => (title = el)}>
-              <svg width='3000' height='60' viewBox="0 0 3000 60">
-                  <text x="0%" y="60%" fill="transparent" textAnchor="start">
-                    {headline}
-                  </text>
-                </svg>
-                </TextTitle>
-                <TextContent ref={(el) => (p = el)}>{description}</TextContent>
-            </TextWrapper>
+              <TextTitle ref={(el) => (title = el)}>
+                <SubTitle headline={headline} />
+            </TextTitle>
+            <TextContent ref={(el) => (p = el)}>{description}</TextContent>
+           </TextWrapper>
             {plus}
           </Column1>
           <Column2>

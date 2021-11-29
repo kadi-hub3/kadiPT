@@ -8,7 +8,7 @@ import {
     ImgWrap,
     Img,
   } from './MainComp.styles'
-import Title from '../StyledTitle'
+import Title from '../MainTitle'
 import{ StyledButton }from '../Button'
 
 const InfoSection = ({
