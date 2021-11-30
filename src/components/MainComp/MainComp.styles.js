@@ -11,8 +11,9 @@ export const InfoContainer = styled.div`
   overflow-x: hidden;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: ${({lightText})=>lightText? '#fff':'#000'};
   background: ${({lightBg})=>lightBg? '#1e2127':'#16181d'};
+  // background: ${({darkBg})=>darkBg? '#E0F1EB':'#D2E1F3'};
   @media screen and (max-width: 768px) {
         padding: 100px 0;
         padding-left: 40px;
@@ -65,25 +66,7 @@ export const TextWrapper = styled.div`
   line-height: 1.5;
 `;
 
-export const TextTitle = styled.h1`
-  text{
-      font-size: 2rem; 
-      stroke: #f98923;
-      stroke-width: 3;
-      animation: strokeText 5s linear;
-
-      @keyframes strokeText{
-          0%{
-              stroke-dasharray: 0 70%;
-              stroke-dashoffset: 10%; 
-          }
-          100%{
-              stroke-dasharray: 70% 0;
-              stroke-dashoffset: -10%;
-          }
-      }
-  }
-`;
+export const TextTitle = styled.h1``;
 
 export const TextContent = styled.p`
   font-size: 14px;

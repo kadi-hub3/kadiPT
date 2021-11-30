@@ -9,20 +9,15 @@ import {ThemeProvider} from 'styled-components'
 import {lightTheme, darkTheme, GlobalStyles} from './themes'
 
 function App() {
-  const [theme, setTheme] = useState('light')
-  const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light');
-  }
+
   return (
-    <ThemeProvider theme={theme==='light' ? lightTheme : darkTheme}>
-      <GlobalStyles/>
-      <button onClick={themeToggler}>change the color</button>
+    <>
       <SideBar />
       <InfoSection {...homeData}/>
       <MainComp {...aboutData}/>
       <ProjectSection projectsData={projectsData}/>
       <MainComp {...contactData}/>
-    </ThemeProvider>
+    </>
   );
 }
 

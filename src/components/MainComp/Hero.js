@@ -17,14 +17,16 @@ const InfoSection = ({
   alt,
   buttonLabel,
   id,
-  lightBg
+  lightBg,
+  darkBg, 
+  lightText
 }) => {
     return (
-        <InfoContainer id={id} lightBg={lightBg}>
+        <InfoContainer id={id} lightBg={lightBg} darkBg={darkBg}>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <Title/>
+                <Title lightText={lightText}/>
                 <BtnWrap>
                   <StyledButton
                     to="about"
@@ -33,6 +35,7 @@ const InfoSection = ({
                     spy={true}
                     exact="true"
                     primary='true'
+                    lightText={lightText}
                   >
                     {buttonLabel}
                   </StyledButton>

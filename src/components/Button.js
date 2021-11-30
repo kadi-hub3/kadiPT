@@ -2,7 +2,7 @@ import styled, {css} from "styled-components";
 import { Link as LinkS} from "react-scroll";
 
 const buttonStyles = css`
-  background: #161821;
+  background: ${({lightBg})=>lightBg? '#C7D4F0':'#161821'};
   white-space: nowrap;
   outline: none;
   cursor: pointer;
@@ -17,6 +17,7 @@ const buttonStyles = css`
   margin: 10px 25px;
   padding: ${({ big }) => (big ? "20px 80px" : "14px 44px")};
   color: ${({ dark }) => (dark ? "rgba(219, 39, 119)":"rgba(245, 158, 11)" )};
+  color: ${({lightText})=>lightText? '#fff':'#000'};
   font-size: ${({ big }) => (big ? "16px" : "12px")};
   &:hover {
     transform: translateY(-6px);

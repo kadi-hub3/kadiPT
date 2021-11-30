@@ -2,14 +2,14 @@ import React from 'react'
 import {BottomLine, MainTitle} from './Title.styles'
 import {homeData} from '../MainComp/Data'
 
-const Title = () => {
+const Title = ({lightText}) => {
     const title= homeData.headline.split('')
     return (
         <>
-        <MainTitle>
+        <MainTitle lightText={lightText}>
             {title.map((letter, id)=><span key={id}>{letter}</span>)}
         </MainTitle>
-        <BottomLine>{homeData.topLine}</BottomLine>
+        <BottomLine lightText={lightText}>{homeData.topLine}</BottomLine>
         </>
     )
 }

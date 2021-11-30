@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const MainTitle=styled.h2`
     font-size: 30px;
-    color: #fff;
+    color: ${({lightText})=>lightText? '#fff':'#000'};
     letter-spacing: 3px;
     white-space: pre-line;
     line-height: 1.75;
@@ -278,7 +278,7 @@ export const MainTitle=styled.h2`
 `
 
 export const BottomLine = styled.p`
-  color: #00bfa6;
+  color: ${({lightText})=>lightText? '#00bfa6':'#000'};
   margin-bottom: 2rem;
   padding: 2rem 1rem;
   font-size: 14px;

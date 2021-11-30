@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import { InfoContainer,
     InfoRow,
     Column1,
@@ -14,7 +14,7 @@ import SubTitle from '../SubTitle'
 
 gsap.registerPlugin(ScrollTrigger);
 
-const About = ({imgStart, id, headline, description, lightBg, img, plus}) => {
+const MainComp = ({imgStart, id, headline, description, lightBg, darkBg, lightText, img, plus}) => {
   let title = useRef(null);
   let p = useRef(null);
   let imgsap = useRef(null);
@@ -40,8 +40,10 @@ const About = ({imgStart, id, headline, description, lightBg, img, plus}) => {
     );
  
   });
+
+
     return (
-        <InfoContainer id={id} lightBg={lightBg}>
+        <InfoContainer id={id} lightBg={lightBg} darkBg={darkBg} lightText={lightText}>
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
@@ -62,4 +64,4 @@ const About = ({imgStart, id, headline, description, lightBg, img, plus}) => {
     )
 }
 
-export default About
+export default MainComp

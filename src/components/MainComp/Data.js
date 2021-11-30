@@ -17,6 +17,7 @@ Visit my <a href="https://www.linkedin.com/in/kadi-moudarrif/">LinkedIn </a>for 
 export const homeData = {
   id: "home",
   lightBg: false,
+  darkBg: false,
   lightText: true,
   topLine: "Front-end Engineer | Web Development",
   headline: "Hi,\nI'm Kadi,\na web developer.",
@@ -34,6 +35,7 @@ export const homeData = {
 export const aboutData = {
   id: "about",
   lightBg: true,
+  darkBg: true,
   lightText: true,
   headline: "About Me",
   description: aboutParagraph,
@@ -43,13 +45,14 @@ export const aboutData = {
   alt: "",
   dark: true,
   primary: true,
-  darkText: false,
+  darkText: true,
   plus: ""
 };
 
 export const contactData = {
   id: "contact",
   lightBg: false,
+  darkBg: false,
   lightText: true,
   headline: "Contact Me",
   description:
@@ -60,7 +63,7 @@ export const contactData = {
   alt: "transactions",
   dark: true,
   primary: true,
-  darkText: false,
+  darkText: true,
   plus: <Form/>
 };
 
