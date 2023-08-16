@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ProjectSection = ({projectsData}) => {
     let box = useRef(null);
-    const id = projectsData.map(item=>item.id)
+    const id = projectsData[0].id;
   
     useEffect(() => {
       const tl = gsap.timeline({

@@ -53,7 +53,7 @@ const SideBar = () => {
          <IconLink href='https://www.github.com/kadi-hub3' target='_blank'>
         <UseAnimations animation={github} size={24}  />
         </IconLink>
-        <IconLink href='https://www.linkedin.com/in/kadi-moudarrif/' target='_blank'>
+        <IconLink href='https://www.linkedin.com/in/kadi-m/' target='_blank'>
         <UseAnimations animation={linkedin} size={24} />
         </IconLink>
         <IconLink href='https://www.twitter.com/' target='_blank'>

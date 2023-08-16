@@ -44,7 +44,7 @@ const FormComponent = () => {
                 field="message"
                 errors={state.errors}
               />
-              <Button dark="true" type="submit" disabled={state.submitting}>
+              <Button dark="true" type="submit" style={{color: 'grey'}} disabled={state.submitting}>
                 Send your message
               </Button>
               </TextSection>
