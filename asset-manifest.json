@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/kadiPT/static/css/main.c25ff4e7.chunk.css",
-    "main.js": "/kadiPT/static/js/main.7bcd47dc.chunk.js",
-    "main.js.map": "/kadiPT/static/js/main.7bcd47dc.chunk.js.map",
-    "runtime-main.js": "/kadiPT/static/js/runtime-main.628ab2f3.js",
-    "runtime-main.js.map": "/kadiPT/static/js/runtime-main.628ab2f3.js.map",
-    "static/js/2.7affd306.chunk.js": "/kadiPT/static/js/2.7affd306.chunk.js",
-    "static/js/2.7affd306.chunk.js.map": "/kadiPT/static/js/2.7affd306.chunk.js.map",
-    "index.html": "/kadiPT/index.html",
-    "static/css/main.c25ff4e7.chunk.css.map": "/kadiPT/static/css/main.c25ff4e7.chunk.css.map",
-    "static/js/2.7affd306.chunk.js.LICENSE.txt": "/kadiPT/static/js/2.7affd306.chunk.js.LICENSE.txt",
-    "static/media/contact.003dd0df.svg": "/kadiPT/static/media/contact.003dd0df.svg",
-    "static/media/hero.c5d27774.svg": "/kadiPT/static/media/hero.c5d27774.svg",
-    "static/media/img1.4832e424.png": "/kadiPT/static/media/img1.4832e424.png",
-    "static/media/img2.9f0a4f42.png": "/kadiPT/static/media/img2.9f0a4f42.png",
-    "static/media/img3.31175165.png": "/kadiPT/static/media/img3.31175165.png",
-    "static/media/img4.9cbf6b89.png": "/kadiPT/static/media/img4.9cbf6b89.png",
-    "static/media/img5.3af979d1.png": "/kadiPT/static/media/img5.3af979d1.png",
-    "static/media/img6.f40e6fba.png": "/kadiPT/static/media/img6.f40e6fba.png"
+    "main.css": "/kadi23/static/css/main.c25ff4e7.chunk.css",
+    "main.js": "/kadi23/static/js/main.d5b4b6ad.chunk.js",
+    "main.js.map": "/kadi23/static/js/main.d5b4b6ad.chunk.js.map",
+    "runtime-main.js": "/kadi23/static/js/runtime-main.535c31e2.js",
+    "runtime-main.js.map": "/kadi23/static/js/runtime-main.535c31e2.js.map",
+    "static/js/2.9428f9b8.chunk.js": "/kadi23/static/js/2.9428f9b8.chunk.js",
+    "static/js/2.9428f9b8.chunk.js.map": "/kadi23/static/js/2.9428f9b8.chunk.js.map",
+    "index.html": "/kadi23/index.html",
+    "static/css/main.c25ff4e7.chunk.css.map": "/kadi23/static/css/main.c25ff4e7.chunk.css.map",
+    "static/js/2.9428f9b8.chunk.js.LICENSE.txt": "/kadi23/static/js/2.9428f9b8.chunk.js.LICENSE.txt",
+    "static/media/contact.003dd0df.svg": "/kadi23/static/media/contact.003dd0df.svg",
+    "static/media/hero.c5d27774.svg": "/kadi23/static/media/hero.c5d27774.svg",
+    "static/media/img1.4832e424.png": "/kadi23/static/media/img1.4832e424.png",
+    "static/media/img2.9f0a4f42.png": "/kadi23/static/media/img2.9f0a4f42.png",
+    "static/media/img3.31175165.png": "/kadi23/static/media/img3.31175165.png",
+    "static/media/img4.9cbf6b89.png": "/kadi23/static/media/img4.9cbf6b89.png",
+    "static/media/img5.3af979d1.png": "/kadi23/static/media/img5.3af979d1.png",
+    "static/media/img6.f40e6fba.png": "/kadi23/static/media/img6.f40e6fba.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.628ab2f3.js",
-    "static/js/2.7affd306.chunk.js",
+    "static/js/runtime-main.535c31e2.js",
+    "static/js/2.9428f9b8.chunk.js",
     "static/css/main.c25ff4e7.chunk.css",
-    "static/js/main.7bcd47dc.chunk.js"
+    "static/js/main.d5b4b6ad.chunk.js"
   ]
 }
